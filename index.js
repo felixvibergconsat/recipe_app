@@ -224,6 +224,9 @@ app.post('/recept', function (req, res) {
                             Rullstöd_Rullstöd_ID: JSON.stringify(data.recordset[0].Rullstöd_Rullstöd_ID).replace(/['"]+/g, ''),
                             Ytterringsstöd_Ytterringsstöd_ID: JSON.stringify(data.recordset[0].Ytterringsstöd_Ytterringsstöd_ID).replace(/['"]+/g, ''),
                             RobotGripper_Gripper_ID: JSON.stringify(data.recordset[0].RobotGripper_Gripper_ID).replace(/['"]+/g, ''),
+                            Robot_LängdSugkopp: JSON.stringify(data.recordset[0].Robot_LängdSugkopp, function (key, val) {
+                                return val.toPrecision(5)
+                            }).replace(/['"]+/g, ''),
                             Indexhjul_Indexhjul_ID: JSON.stringify(data.recordset[0].Indexhjul_Indexhjul_ID).replace(/['"]+/g, ''),
                             StationId: JSON.stringify(data.recordset[0].StationId).replace(/['"]+/g, ''),
                         });
