@@ -1,3 +1,5 @@
+
+...
 git clone https://github.com/felixvibergconsat/recipe_app;
 cd recipe_app;
 docker build -t recipe_app .;
@@ -10,4 +12,4 @@ SERVER=xxx
 DATABASE=xxx
 
 docker run -p 8080:8080 --env-file .env recipe_app
-
+...
