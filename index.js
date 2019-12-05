@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 var app = express();
-require('dotenv').config();
+//require('dotenv').config();
 app.set('view engine', 'ejs');
 app.use('/public', express.static('public'));
 app.use(bodyParser.urlencoded({
