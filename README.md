@@ -1,15 +1,6 @@
 
 ```
-git clone https://github.com/felixvibergconsat/recipe_app;
-cd recipe_app;
-docker build -t recipe_app .;
-
---- include env-file named .env ---
-
-DB_USER=xxx
-DB_PASSWORD=xxx
-SERVER=xxx
-DATABASE=xxx
-
-docker run -p 8080:8080 --env-file .env recipe_app
+wget https://raw.githubusercontent.com/felixvibergconsat/recipe_app/master/Dockerfile
+docker build -t recipe_app .
+docker run -p 8080:8080 -e DB_USER=xxx -e DB_PASSWORD=xxx -e SERVER=xxx\\xxx -e DATABASE=xxx recipe_app
 ```
