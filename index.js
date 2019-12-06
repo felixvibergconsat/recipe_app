@@ -213,9 +213,6 @@ app.post('/recept', function (req, res) {
                             MonteringsRadie_C_eq_RD75_add_RSD10_div_2_E_eq_RH12: JSON.stringify(data.recordset[0].MonteringsRadie_C_eq_RD75_add_RSD10_div_2_E_eq_RH12, function (key, val) {
                                 return val.toPrecision(5)
                             }).replace(/['"]+/g, ''),
-                            Hållare_YtterDiameter_C_eq_CPD10_E_eq_CPD15: JSON.stringify(data.recordset[0].Hållare_YtterDiameter_C_eq_CPD10_E_eq_CPD15, function (key, val) {
-                                return val.toPrecision(5)
-                            }).replace(/['"]+/g, ''),
                             Mothall_Mothall_ID: JSON.stringify(data.recordset[0].Mothall_Mothall_ID).replace(/['"]+/g, ''),
                             RullHjul_RullHjul_ID: JSON.stringify(data.recordset[0].RullHjul_RullHjul_ID).replace(/['"]+/g, ''),
                             RullSarg_RullSarg_ID: JSON.stringify(data.recordset[0].RullSarg_RullSarg_ID).replace(/['"]+/g, ''),
