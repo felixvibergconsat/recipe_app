@@ -445,7 +445,7 @@ app.post("/edit_recept", function (req, res) {
             .input('MonteringsVinkel_C_eq_IRA50_E_eq_BCA21', sql.VarChar(255), req.body.MonteringsVinkel_C_eq_IRA50_E_eq_BCA21)
             .input('OffsetFrånCentrum_RH11', sql.VarChar(255), req.body.OffsetFrånCentrum_RH11)
             .input('MonteringsRadie_C_eq_RD75_add_RSD10_div_2_E_eq_RH12', sql.VarChar(255), req.body.MonteringsRadie_C_eq_RD75_add_RSD10_div_2_E_eq_RH12)
-            .input('Hållare_YtterDiameter_C_eq_CPD10_E_eq_CPD15', sql.VarChar(255), req.body.Hållare_YtterDiameter_C_eq_CPD10_E_eq_CPD15)
+            .input('Hållare_YtterDiameter_C_eq_CPD10_E_eq_CPD15', sql.VarChar(255), 0)
             .input('Mothall_Mothall_ID', sql.VarChar(255), req.body.Mothall_Mothall_ID)
             .input('RullHjul_RullHjul_ID', sql.VarChar(255), req.body.RullHjul_RullHjul_ID)
             .input('RullSarg_RullSarg_ID', sql.VarChar(255), req.body.RullSarg_RullSarg_ID)
